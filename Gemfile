@@ -20,6 +20,7 @@ source 'https://rubygems.org'
  gem 'turbolinks'
  gem 'bootstrap'
  gem 'figaro'
+ gem 'active_model_serializers'
 
  group :development, :test do
    gem 'byebug'
@@ -29,4 +30,5 @@ source 'https://rubygems.org'
    gem 'faker'
    gem 'factory_bot_rails'
    gem 'pry-rails'
+   gem 'listen'
  end
