@@ -1,8 +1,8 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email, :created_at
+  attributes :id, :username, :email, :created_at
 
   def name
-    object.name
+    object.username
   end
 
   def created_at
