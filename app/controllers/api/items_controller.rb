@@ -1,5 +1,5 @@
 class Api::ItemsController < ApiController
-    before_action :authenticated?
+    before_action :authenticated?, :set_user
   
     def create
         item = current_user.lists.find(params[:list_id]).items.build(item_params)
@@ -9,6 +9,10 @@ class Api::ItemsController < ApiController
             render json: {errors: item.errors.full_messages},
             status: :unprocessable_entity
         end
+    end
+
+    def set_user
+        current_user = User.find(params[:id])
     end
 
     def item_params
