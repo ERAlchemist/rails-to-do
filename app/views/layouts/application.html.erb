@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,4 +13,53 @@
   <body>
     <%= yield %>
   </body>
-</html>
+</html><h3>What is it?</h3><br>
+A browser-based web application for managing the request and retrieval of wine samples.
+
+<h3>Why did you create it?</h3>
+
+<p>I created it as my "cornerstone" project for the <a href="https://www.bloc.io">Full-Stack Online Web Development program</a> I've been enrolled in for the past 13 months. In order to complete the program I need to showcase my development skills by building a web application from ground up that solves some type of  problem. Since I have spent the last 20 months working in quality control at a large winery, I've developed a keen insight into the logistical challenges faced by a large production winery.<br> One problem in particular, is related to wine sampling. The lab is tasked with collecting samples for both QC testing and Winemaking-taste samples which can mean hundreds some samples need to be collected each week.  
+So with my knowledge of the problem, and my new programming skill-set, I thought I might be able to build something that could be useful for keeping track of wine samples and help give the lab  better visibility on what has and has not yet been sampled.</p> <br>
+
+<h3>What are the key features of the application?</h3><br>
+    <h5>With this app a user will be able to....</h5>
+    <ul>
+        <li>Create sample requests and specify details such as title and description </li>
+        <img src="https://drive.google.com/open?id=1Z78u07LjU0Qof3yNb6oQo_L5NnMfF1sR" >
+       
+        <li>Assign a due date to the request to indicate what day the request needs to be completed.</li>
+
+        <li>Add samples to the request and specify Tank and Lot ID of each sample.</li>
+        <li>Samples are automatically sorted by Tank in Ascending order.</li>
+        <li>Upload a large list of samples by uploading a CSV file containing the Tanks and Lot IDs </li>
+        <li>Specify sample size for each sample (250mL, 375mL or 750 mL) when adding samples individually or as an uploaded list.</li>
+        <li>Mark samples as complete as you go through the sample list on each request. A 'time completed' timestamp will be recorded and displayed for completed samples.</li>
+        <li>When a tank for a requested sample is empty and no sample can be retrieved, this can be indicated on the request by selecting the 'Empty Tank' icon.</li>
+        <li>Erroneous or unnecessary samples can be deleted from requests by selecting the trash icon</li>
+        <li>Once all samples have been collected, the request can be closed out by selecting the 'close out request' icon. </li>
+
+        <li>When viewing the requests list, the requests are separated into two groups 'Incomplete Requests' and 'Completed Requests'. </li>
+        <li>Each completed request will display a 'time completed' timestamp.</li>
+        <li>When viewing the requests list, completed and/or incomplete requests can be shown or hidden by selecting or unselecting 'show completed' and 'show incomplete' filter options.</li>
+        <li>The Sample Schedule feature allows for the user to view requests in a weekly calendar view which is a visual indicator of when each request is due.</li>
+        <li>Navigate easily between the Sample Schedule, Request List, and create new requests from the side navigation menu</li>
+        <li>Requests can be set as 'recurring' which allows the user to set a recurrence interval (1 to 7 days) which will create a duplicate copy of the request including all associated samples with a due date one interval length in the future (i.e. 1 day later, 2 days later, etc)</li>
+    
+    </ul><br>
+
+    <h3>What did you use to build it?</h3><br>
+    <p>The LABrador web application was built with a suite of tools and technologies including:</p> <br>
+    HTML5 <img src="https://cdn0.iconfinder.com/data/icons/HTML5/32/HTML_Logo.png"><br>
+    CSS3 <img src="https://cdn0.iconfinder.com/data/icons/website-kit-2/512/icon_287-32.png"><br>
+    SASS <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/sass-32.png"><br>
+    JavaScript <img src="https://cdn0.iconfinder.com/data/icons/designer-skills/128/node-js-32.png"><br>
+    MySQL <img src="https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-32.png"><br>
+    JQuery <img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/JQuery_logo-32.png"><br>
+    UIkit <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ratio="1"> <polygon points="14.4,3.1 11.3,5.1 15,7.3 15,12.9 10,15.7 5,12.9 5,8.5 2,6.8 2,14.8 9.9,19.5 18,14.8 18,5.3"></polygon> <polygon points="9.8,4.2 6.7,2.4 9.8,0.4 12.9,2.3"></polygon></svg>
+      Git <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-32.png"><br><br>
+      <h3>What type of device will it need?</h3><br>
+      <p> It should work on any device with high speed internet and a modern web browser (google chrome preferred) </p><br><br>
+
+      <h3>When will it be ready?</h3><br>
+      <p>A working demo will be deployed and ready for beta testing within then next week....</p>
+
